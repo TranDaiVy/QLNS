@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <!-- function getID_user(){
+            return new Promise(function(resolve){
+                resolve(comments)
+            })
+        }
+        function getUserByID(cmID){
+            return new Promise(function(resolve){
+                const result=users.filter(function(user){
+                    return cmID.includes(user.id);
+                })
+                resolve(result);
+            })
+        }
+        
+        
+        getID_user()
+            .then(function(comments){
+                const userID=comments.map((comment)=>{
+                    return comment.id_user
+                })
+                return getUserByID(userID)
+                        .then(function(users){
+                           return {
+                                users: users,
+                                cm: comments
+                           }
+                        })
+            })
+            .then(function(data){
+                console.log(data)
+                const ul=document.querySelector('ul');
+                var html=''; 
+                data.cm.forEach(function(element){
+                   const result_user=data.users.find(function(user){
+                        return user.id === element.id_user
+                   })
+                   html+=`<li>${result_user.name}: ${element.content}</li>`
+                   console.log(result_user)
+                });
+                ul.innerHTML=html;
+            }) -->
+        
+    </ul>
+</body>
+<script src="/repair/js/test.js"></script>
+</html>
